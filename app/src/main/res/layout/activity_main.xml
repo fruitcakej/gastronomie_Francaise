@@ -194,36 +194,41 @@
                 android:src="@drawable/raclette" />
 
             <RadioGroup
-                android:layout_width="match_parent"
+                android:id="@+id/rg3"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="@dimen/def_margin"
-                android:orientation="horizontal">
+                android:layout_top="@dimen/sm_margin"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical">
 
                 <RadioButton
                     android:id="@+id/ratatouille"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/ratatouille" />
+                    android:text="@string/ratatouille"
+                    android:onClick="onRadioButtonClicked"/>
 
                 <RadioButton
                     android:id="@+id/rillettes"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/rillettes" />
+                    android:text="@string/rillettes"
+                    android:onClick="onRadioButtonClicked"/>
 
                 <RadioButton
                     android:id="@+id/raclette"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/sm_margin"
-                    android:text="@string/raclette" />
+                    android:text="@string/raclette"
+                    android:onClick="onRadioButtonClicked"/>
 
                 <RadioButton
                     android:id="@+id/raisin"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/sm_margin"
-                    android:text="@string/raisin" />
+                    android:text="@string/raisin"
+                    android:layout_marginBottom="@dimen/def_margin"
+                    android:onClick="onRadioButtonClicked"/>
 
             </RadioGroup>
 
@@ -286,29 +291,33 @@
                 android:orientation="horizontal">
 
                 <CheckBox
-                    android:id="@+id/q4Option1"
+                    android:id="@+id/q4cb1"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    />
 
                 <CheckBox
-                    android:id="@+id/q4Option2"
+                    android:id="@+id/q4cb2"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    />
 
                 <CheckBox
-                    android:id="@+id/q4Option3"
+                    android:id="@+id/q4cb3"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    />
 
                 <CheckBox
-                    android:id="@+id/q4Option4"
+                    android:id="@+id/q4cb4"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/def_margin"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    />
 
             </LinearLayout>
 
@@ -389,6 +398,7 @@
                 android:text="@string/question7" />
 
             <RadioGroup
+                android:id="@+id/rg7"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
@@ -399,7 +409,8 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/def_margin"
                     android:layout_weight="1"
-                    android:text="@string/years10" />
+                    android:text="@string/years10"
+                    android:onClick="onRadioButtonClicked"/>
 
                 <RadioButton
                     android:id="@+id/years8"
@@ -407,7 +418,8 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/def_margin"
                     android:layout_weight="1"
-                    android:text="@string/years8" />
+                    android:text="@string/years8"
+                    android:onClick="onRadioButtonClicked"/>
 
                 <RadioButton
                     android:id="@+id/years15"
@@ -415,7 +427,8 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/def_margin"
                     android:layout_weight="1"
-                    android:text="@string/years15" />
+                    android:text="@string/years15"
+                    android:onClick="onRadioButtonClicked"/>
 
                 <RadioButton
                     android:id="@+id/years5"
@@ -423,7 +436,8 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/def_margin"
                     android:layout_weight="1"
-                    android:text="@string/years5" />
+                    android:text="@string/years5"
+                    android:onClick="onRadioButtonClicked"/>
 
             </RadioGroup>
 
@@ -438,6 +452,7 @@
                 android:text="@string/question8" />
 
             <RadioGroup
+                android:id="@+id/rg8"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_gravity="center_horizontal"
@@ -448,14 +463,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/def_margin"
-                    android:text="@string/question8Option1" />
+                    android:text="@string/question8Option1"
+                    android:onClick="onRadioButtonClicked"/>
 
                 <RadioButton
                     android:id="@+id/question8False"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/def_margin"
-                    android:text="@string/question8Option2" />
+                    android:text="@string/question8Option2"
+                    android:onClick="onRadioButtonClicked"/>
 
             </RadioGroup>
 

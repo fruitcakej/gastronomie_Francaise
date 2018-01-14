@@ -34,5 +34,6 @@
     <string name="question8">Q.8. French wine is less about grapes than about the soil?</string>
     <string name="question8Option1">True</string>
     <string name="question8Option2">False</string>
+    <string name="select2">Please select at least 2 answers</string>
     <string name="results">Show me my score!</string>
 </resources>
