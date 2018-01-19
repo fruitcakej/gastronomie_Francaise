@@ -360,28 +360,28 @@
                 android:text="@string/question6" />
 
             <CheckBox
-                android:id="@+id/q5Option1"
+                android:id="@+id/q6cb1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/def_margin"
                 android:text="@string/question6Option1" />
 
             <CheckBox
-                android:id="@+id/q5Option2"
+                android:id="@+id/q6cb2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/def_margin"
                 android:text="@string/question6Option2" />
 
             <CheckBox
-                android:id="@+id/q5Option3"
+                android:id="@+id/q6cb3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/def_margin"
                 android:text="@string/question6Option3" />
 
             <CheckBox
-                android:id="@+id/q5Option4"
+                android:id="@+id/q6cb4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/def_margin"
@@ -486,6 +486,18 @@
                 android:background="@drawable/layout_bg"
                 android:padding="@dimen/def_margin"
                 android:text="@string/results" />
+
+            <Button
+                android:id="@+id/reset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/def_margin"
+                android:layout_marginTop="@dimen/def_margin"
+                android:background="@drawable/layout_bg"
+                android:padding="@dimen/def_margin"
+                android:text="@string/reset"
+                android:visibility="gone"/>
 
         </LinearLayout>
     </ScrollView>

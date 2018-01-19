@@ -36,4 +36,8 @@
     <string name="question8Option2">False</string>
     <string name="select2">Please select at least 2 answers</string>
     <string name="results">Show me my score!</string>
+    <string name="welcomeMessage">Hi </string>
+    <string name="scoreResults">You scored</string>
+    <string name="between">out of</string>
+    <string name="reset">Reset</string>
 </resources>
