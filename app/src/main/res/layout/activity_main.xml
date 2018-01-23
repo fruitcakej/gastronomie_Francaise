@@ -36,7 +36,6 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/def_margin"
                 android:background="@drawable/layout_bg"
-                android:fontFamily="@font/cambria"
                 android:padding="@dimen/tv_padding"
                 android:text="@string/welcome"
                 android:textSize="@dimen/tv_size" />
@@ -46,7 +45,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/def_margin"
-                android:fontFamily="@font/cambria"
                 android:hint="@string/name_hint"
                 android:imeOptions="actionDone"
                 android:inputType="textCapWords" />
@@ -57,7 +55,6 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/def_margin"
                 android:background="@drawable/layout_bg"
-                android:fontFamily="@font/cambria"
                 android:padding="@dimen/tv_padding"
                 android:text="@string/question1" />
 
@@ -120,7 +117,6 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/def_margin"
                 android:background="@drawable/layout_bg"
-                android:fontFamily="@font/cambria"
                 android:padding="@dimen/tv_padding"
                 android:text="@string/question2" />
 
@@ -175,7 +171,6 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/def_margin"
                 android:background="@drawable/layout_bg"
-                android:fontFamily="@font/cambria"
                 android:padding="@dimen/tv_padding"
                 android:text="@string/question3" />
 
@@ -232,7 +227,6 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/def_margin"
                 android:background="@drawable/layout_bg"
-                android:fontFamily="@font/cambria"
                 android:padding="@dimen/tv_padding"
                 android:text="@string/question4" />
 
@@ -317,7 +311,6 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/def_margin"
                 android:background="@drawable/layout_bg"
-                android:fontFamily="@font/cambria"
                 android:padding="@dimen/tv_padding"
                 android:text="@string/question5" />
 
@@ -334,7 +327,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/def_margin"
-                android:fontFamily="@font/cambria"
                 android:hint="@string/question_hint"
                 android:imeOptions="actionDone"
                 android:inputType="text" />
@@ -345,7 +337,6 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/def_margin"
                 android:background="@drawable/layout_bg"
-                android:fontFamily="@font/cambria"
                 android:padding="@dimen/tv_padding"
                 android:text="@string/question6" />
 
@@ -383,7 +374,6 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/def_margin"
                 android:background="@drawable/layout_bg"
-                android:fontFamily="@font/cambria"
                 android:padding="@dimen/tv_padding"
                 android:text="@string/question7" />
 
@@ -433,7 +423,6 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/def_margin"
                 android:background="@drawable/layout_bg"
-                android:fontFamily="@font/cambria"
                 android:padding="@dimen/tv_padding"
                 android:text="@string/question8" />
 
