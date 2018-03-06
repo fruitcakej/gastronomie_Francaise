@@ -26,7 +26,7 @@
                 android:fontFamily="@font/frenchvanillaswirlitalic"
                 android:text="@string/app_name"
                 android:textAlignment="center"
-                android:textColor="#37474F"
+                android:textColor="@color/title"
                 android:textSize="@dimen/h1" />
 
 
@@ -81,31 +81,23 @@
 
                     <RadioButton
                         android:id="@+id/pates"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="@dimen/sm_margin"
+                        style="@style/rb1"
                         android:text="@string/pates" />
 
                     <RadioButton
                         android:id="@+id/chips"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="@dimen/sm_margin"
+                        style="@style/rb1"
                         android:text="@string/chips" />
 
                     <RadioButton
                         android:id="@+id/frites"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="@dimen/sm_margin"
+                        style="@style/rb1"
                         android:text="@string/frites" />
 
                     <RadioButton
                         android:id="@+id/crepes"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/rb1"
                         android:layout_marginBottom="@dimen/def_margin"
-                        android:layout_marginLeft="@dimen/sm_margin"
                         android:text="@string/crepes" />
 
                 </RadioGroup>
@@ -137,30 +129,22 @@
 
                 <RadioButton
                     android:id="@+id/mille_feuille"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/sm_margin"
+                    style="@style/rb2"
                     android:text="@string/milleFeuille" />
 
                 <RadioButton
                     android:id="@+id/creme_chantilly"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/sm_margin"
+                    style="@style/rb2"
                     android:text="@string/cremeChantilly" />
 
                 <RadioButton
                     android:id="@+id/opera"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/sm_margin"
+                    style="@style/rb2"
                     android:text="@string/opera" />
 
                 <RadioButton
                     android:id="@+id/creme_brulee"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/def_margin"
+                    style="@style/rb2"
                     android:text="@string/cremeBrulee" />
 
             </RadioGroup>
@@ -193,30 +177,22 @@
 
                 <RadioButton
                     android:id="@+id/ratatouille"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/sm_margin"
+                    style="@style/rb2"
                     android:text="@string/ratatouille" />
 
                 <RadioButton
                     android:id="@+id/rillettes"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/sm_margin"
+                    style="@style/rb2"
                     android:text="@string/rillettes" />
 
                 <RadioButton
                     android:id="@+id/raclette"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/sm_margin"
+                    style="@style/rb2"
                     android:text="@string/raclette" />
 
                 <RadioButton
                     android:id="@+id/raisin"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/def_margin"
+                    style="@style/rb2"
                     android:text="@string/raisin" />
 
             </RadioGroup>
@@ -236,37 +212,21 @@
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="@dimen/def_margin"
-                    android:layout_weight="1"
-                    android:adjustViewBounds="true"
+                    style="@style/q4ImageView"
                     android:scaleType="centerCrop"
                     android:src="@drawable/petrus_1990" />
 
                 <ImageView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="@dimen/def_margin"
-                    android:layout_weight="1"
-                    android:adjustViewBounds="true"
+                    style="@style/q4ImageView"
                     android:scaleType="centerCrop"
                     android:src="@drawable/grape" />
 
                 <ImageView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="@dimen/def_margin"
-                    android:layout_weight="1"
-                    android:adjustViewBounds="true"
+                    style="@style/q4ImageView"
                     android:src="@drawable/grenadine" />
 
                 <ImageView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="@dimen/def_margin"
-                    android:layout_weight="1"
-                    android:adjustViewBounds="true"
+                    style="@style/q4ImageView"
                     android:src="@drawable/ice_wine" />
 
             </LinearLayout>
@@ -280,28 +240,20 @@
 
                 <CheckBox
                     android:id="@+id/q4cb1"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1" />
+                    style="@style/cb1" />
 
                 <CheckBox
                     android:id="@+id/q4cb2"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1" />
+                    style="@style/cb1" />
 
                 <CheckBox
                     android:id="@+id/q4cb3"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1" />
+                    style="@style/cb1" />
 
                 <CheckBox
                     android:id="@+id/q4cb4"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/def_margin"
-                    android:layout_weight="1" />
+                    style="@style/cb1"
+                    android:layout_marginBottom="@dimen/def_margin"/>
 
             </LinearLayout>
 
@@ -342,30 +294,22 @@
 
             <CheckBox
                 android:id="@+id/q6cb1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/def_margin"
+                style="@style/cb2"
                 android:text="@string/question6Option1" />
 
             <CheckBox
                 android:id="@+id/q6cb2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/def_margin"
+                style="@style/cb2"
                 android:text="@string/question6Option2" />
 
             <CheckBox
                 android:id="@+id/q6cb3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/def_margin"
+                style="@style/cb2"
                 android:text="@string/question6Option3" />
 
             <CheckBox
                 android:id="@+id/q6cb4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/def_margin"
+                style="@style/cb2"
                 android:text="@string/question6Option4" />
 
             <TextView
@@ -385,34 +329,22 @@
 
                 <RadioButton
                     android:id="@+id/years10"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/def_margin"
-                    android:layout_weight="1"
+                    style="@style/rb3"
                     android:text="@string/years10" />
 
                 <RadioButton
                     android:id="@+id/years8"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/def_margin"
-                    android:layout_weight="1"
+                    style="@style/rb3"
                     android:text="@string/years8" />
 
                 <RadioButton
                     android:id="@+id/years15"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/def_margin"
-                    android:layout_weight="1"
+                    style="@style/rb3"
                     android:text="@string/years15" />
 
                 <RadioButton
                     android:id="@+id/years5"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/def_margin"
-                    android:layout_weight="1"
+                    style="@style/rb3"
                     android:text="@string/years5" />
 
             </RadioGroup>

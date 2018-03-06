@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
@@ -19,20 +20,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     int score = 0;
     private final int amountOfQuestions = 8;
-    EditText name, Question5;
+    EditText name, question5;
     RadioButton frites, milleFeuille, raclette, years8, question8True;
-    CheckBox Question4cb1, Question4cb2, Question4cb3, Question4cb4, Question6cb1, Question6cb2, Question6cb3, Question6cb4;
+    CheckBox question4cb1, question4cb2, question4cb3, question4cb4, question6cb1, question6cb2, question6cb3, question6cb4;
     String textForQuestion5, scoreMessage;
     Button resultsButton, startAgainButton;
 
     /**
-     * Associate layout ID's to variables in onCreate
+     * Associate layout ID's to variables in onCreate.
+     * Autohide keyboard pop-up - src stackoverflow
      */
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        this.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
 
         name = findViewById(R.id.nameInput);
         frites = findViewById(R.id.frites);
@@ -40,15 +43,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         raclette = findViewById(R.id.raclette);
         years8 = findViewById(R.id.years8);
         question8True = findViewById(R.id.question8True);
-        Question4cb1 = findViewById(R.id.q4cb1);
-        Question4cb2 = findViewById(R.id.q4cb2);
-        Question4cb3 = findViewById(R.id.q4cb3);
-        Question4cb4 = findViewById(R.id.q4cb4);
-        Question5 = findViewById(R.id.question5TextInput);
-        Question6cb1 = findViewById(R.id.q6cb1);
-        Question6cb2 = findViewById(R.id.q6cb2);
-        Question6cb3 = findViewById(R.id.q6cb3);
-        Question6cb4 = findViewById(R.id.q6cb4);
+        question4cb1 = findViewById(R.id.q4cb1);
+        question4cb2 = findViewById(R.id.q4cb2);
+        question4cb3 = findViewById(R.id.q4cb3);
+        question4cb4 = findViewById(R.id.q4cb4);
+        question5 = findViewById(R.id.question5TextInput);
+        question6cb1 = findViewById(R.id.q6cb1);
+        question6cb2 = findViewById(R.id.q6cb2);
+        question6cb3 = findViewById(R.id.q6cb3);
+        question6cb4 = findViewById(R.id.q6cb4);
         resultsButton = findViewById(R.id.results);
         startAgainButton = findViewById(R.id.reset);
 
@@ -61,6 +64,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     /**
      * Calls methods on the click of the results or reset button
+     * Advised to use switch/case by user on slack.
      */
 
     @Override
@@ -78,38 +82,39 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     /**
-     * Perform all scoring logic in here. Updated to one method to prevent errors on duplicate scoring
+     * Perform all scoring logic in here. Updated to one method to prevent errors on duplicate scoring (previously happening)
      * by having different methods. Question 5 uses an 'or' statement to accept an answer in French for the updated version of this app.
+     * Now using score ++ after slack post advising that this is the same as +1
      */
 
     public void checkAnswers() {
         if (frites.isChecked()) {
-            score += 1;
+            score ++;
         }
         if (milleFeuille.isChecked()) {
-            score += 1;
+            score ++;
         }
         if (raclette.isChecked()) {
-            score += 1;
+            score ++;
         }
         if (years8.isChecked()) {
-            score += 1;
+            score ++;
         }
         if (question8True.isChecked()) {
-            score += 1;
+            score ++;
         }
-        textForQuestion5 = Question5.getText().toString();
+        textForQuestion5 = question5.getText().toString();
         if (textForQuestion5.trim().equalsIgnoreCase("chocolate") || textForQuestion5.trim().equalsIgnoreCase("chocolat")) {
-            score += 1;
+            score ++;
         } else {
             score += 0;
         }
-        if (!Question4cb1.isChecked() && Question4cb2.isChecked() && Question4cb3.isChecked() && !Question4cb4.isChecked()) {
-            score += 1;
+        if (!question4cb1.isChecked() && question4cb2.isChecked() && question4cb3.isChecked() && !question4cb4.isChecked()) {
+            score ++;
             Log.i("MainActivity", "score" + score);
         }
-        if (!Question6cb1.isChecked() && !Question6cb2.isChecked() && Question6cb3.isChecked() && Question6cb4.isChecked()) {
-            score += 1;
+        if (!question6cb1.isChecked() && !question6cb2.isChecked() && question6cb3.isChecked() && question6cb4.isChecked()) {
+            score ++;
             Log.i("MainActivity", "score" + score);
         }
     }
@@ -146,8 +151,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      */
 
     public void restartActivity() {
-        Intent intent = getIntent();
+        Intent restartMe = getIntent();
         finish();
-        startActivity(intent);
+        startActivity(restartMe);
     }
 }

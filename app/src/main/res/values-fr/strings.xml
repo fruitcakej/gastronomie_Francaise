@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Gastronomie Française</string>
+    <string name="name_hint">Votre prénom</string>
+    <string name="welcome">"Bienvenue au quiz sur la gastronomie française! Un mini test sur votre connaissance de la cuisine et du vin français. Veuillez entrer votre nom pour commencer. "</string>
+    <string name="question1">Q.1. Qu\'est-ce qui est affiché dans l\'image ci-dessous?</string>
+    <string name="question2">Q.2. Quel dessert est montré ci-dessous?</string>
+    <string name="question3">Q.3. Quel plat classique est servi comme ci-dessous?</string>
+    <string name="question4">Q.4. Lequel des suivants ne contient pas d\'alcool?</string>
+    <string name="question5">Q.5. Qu\'est-ce qui est contenu dans cette boîte?</string>
+    <string name="question_hint">Veuillez taper ici</string>
+    <string name="question6">Q.6. Pain au chocolat est .......</string>
+    <string name="question6Option1">L\'agonie quand le français à court de chocolat</string>
+    <string name="question6Option2">Un dessert français</string>
+    <string name="question6Option3">Généralement servi au petit-déjeuner</string>
+    <string name="question6Option4">Une pâtisserie française</string>
+    <string name="question7">Q.7. Boire un nouveau vin chaque nuit, à peu près combien d\'années faudrait-il pour boire à travers la France?</string>
+    <string name="question8">Q.8. Le vin français est moins sur les raisins que sur le sol?</string>
+    <string name="question8Option1">Vrai</string>
+    <string name="question8Option2">Faux</string>
+    <string name="results">Résultats</string>
+    <string name="welcomeMessage">Salut</string>
+    <string name="scoreResults">Tu as marqué des points</string>
+    <string name="between">sur</string>
+    <string name="reset">Réinitialiser</string>
+    <string name="select2">Veuillez sélectionner au moins 2 réponses</string>
+    <string name="content">Tour Eiffel Image</string>
+</resources>
